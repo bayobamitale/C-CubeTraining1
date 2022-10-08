@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>JavaScript Operators</title>
+		<link rel="stylesheet" href="main.css" />
+	</head> 
+	<body>
+		<h1>Understanding JavaScript Operators</h1>
+		<p>
+			JavaScript can be used to perform operations using operators like +, -, *, /, %, =, ==, !=, &gt;, &lt;, &gt;=, &lt;=,  e.t.c to achieve user set goals. This work describes these operators with examples.
+		</p>
+		<h2> Addition </h2>
+		<p>
+			Addition operation can be performed on variables using the "+" symbol to calculate the sum of two or more numbers.
+			For example, you can declare variables firstNumber and secondNumber and assign values to each using the let keyword and the assignment operator "=" and add the two variables together using the addition operator "+". The sum of the two numbers is then store in the variable sum.
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 30;
+				let sum = firstNumber + secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="firstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="firstNo" name="firstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="secondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="secondNo" name="secondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="SUM" onclick="ADD();">
+						</td>
+						<td>
+							<input type="text" id="result" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Subtraction </h2>
+		<p>
+			Subtraction operation can be performed on variables using the "-" symbol to calculate the difference of two or more numbers.
+			For example, the difference of the two numbers is shown below:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let difference = firstNumber - secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="subtractFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="subtractFirstNo" name="subtractFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="subtractSecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="subtractSecondNo" name="subtractSecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="SUBTRACT" onclick="SUBTRACT();">
+						</td>
+						<td>
+							<input type="text" id="subtractResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Multiplication </h2>
+		<p>
+			Multiplication operation can be performed on variables using the "*" symbol to calculate the product of two or more numbers.
+			For example, the product of two numbers is shown below:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let product = firstNumber * secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="multiplyFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="multiplyFirstNo" name="multiplyFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="multiplySecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="multiplySecondNo" name="multiplySecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="MULTIPLY" onclick="MULTIPLY();">
+						</td>
+						<td>
+							<input type="text" id="multiplyResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Division </h2>
+		<p>
+			Division operation can be performed on variables using the "/" symbol to calculate the division of numbers.
+			For example, the division of two numbers is shown below:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let division = firstNumber / secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="divisionFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="divisionFirstNo" name="divisionFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="divisionSecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="divisionSecondNo" name="divisionSecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="DIVISION" onclick="DIVISION();">
+						</td>
+						<td>
+							<input type="text" id="divisionResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Modulus </h2>
+		<p>
+			Modulus operation can be performed on variables using the "%" symbol to get the remainder of the division of numbers.
+			For example, the remainder of the division of two numbers can be determined as shown below:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let remainder = firstNumber % secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="modulusFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="modulusFirstNo" name="modulusFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="modulusSecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="modulusSecondNo" name="modulusSecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="REMAINDER" onclick="MODULUS();">
+						</td>
+						<td>
+							<input type="text" id="modulusResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Equality </h2>
+		<p>
+			Equality operation can be performed on variables using the double equal sign "==" to test the equality of numbers. It returns a boolean "true" if numbers are equal, else it returns "false".
+			For example, the following returns a false since the numbers are not equal:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let equal = firstNumber == secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="equalFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="equalFirstNo" name="equalFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="equalSecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="equalSecondNo" name="equalSecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="EQUAL?" onclick="EQUALITY();">
+						</td>
+						<td>
+							<input type="text" id="equalResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Not Equal </h2>
+		<p>
+			The "Not Equal" operation can be performed on variables using the sign "!=" to test the non equality of numbers. It returns a boolean "true" if numbers are not equal, else it returns "false".
+			For example, the following returns a true since the numbers are not equal:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let equal = firstNumber != secondNumber;
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="notequalFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="notequalFirstNo" name="notequalFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="notequalSecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="notequalSecondNo" name="notequalSecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="NOT EQUAL?" onclick="NOT_EQUALITY();">
+						</td>
+						<td>
+							<input type="text" id="notequalResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<h2> Comparison Operators </h2>
+		<p>
+			The comparison operators consist of, among others, the equality and not equal (discussed above), greater than, less than, greater or equal to, less than or equal to  operations (==, !=, &gt;, &lt;, &gt;=, &lt;=). It returns a boolean "true" if the condition is satisfied, else it returns "false".
+			For example, the program below prints out true since 20 is greater than 5:
+			<pre>
+				let firstNumber = 20;
+				let secondNumber = 5;
+				let compare = firstNumber > secondNumber;
+				alert(compare);
+			</pre>
+		</p>
+		<div class="Example">
+			<form>
+				<table>
+					<tr>
+						<td>
+							<label for="compareFirstNo">First Number:</label>
+						</td>
+						<td>
+							<input type="text" id="compareFirstNo" name="compareFirstNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="compareSecondNo">Second Number:</label>
+						</td>
+						<td>
+							<input type="text" id="compareSecondNo" name="compareSecondNo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="FirstNo > SecondNo?" onclick="COMPARE();">
+						</td>
+						<td>
+							<input type="text" id="compareResult" name="result">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+
+</html>
+
+
