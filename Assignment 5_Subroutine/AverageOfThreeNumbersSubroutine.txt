@@ -1,0 +1,15 @@
+Subroutine AverageThreeNumbers(number1: integer, number2: integer, number3: integer)
+Start
+	Compute averageOfNumbers as (number1 + number2 + number3)/3
+	return averageOfNumbers
+End
+
+Main Program
+Start
+	Compute average1 = CALL AverageThreeNumbers(24, 43, 1)
+	Display average1
+	Compute average2 = CALL AverageThreeNumbers(67, 85, 101)
+	Display average2
+	Compute average3 = CALL AverageThreeNumbers(29, 39, 51)
+	Display average3
+End

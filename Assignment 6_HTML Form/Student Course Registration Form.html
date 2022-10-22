@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" href="courseRegistrationStyle.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Course Registration Form">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Tola Adebambo">
+	</head> 
+	<body>
+
+		<form autocomplete="on">
+			<table>
+				<th colspan="2">
+					COURSE REGISTRATION FORM
+				</th>
+				<tr>
+					<td>
+						<label for="matric">Matric Number:</label>
+					</td>
+					<td>
+						<input type="text" id="matric" name="matric" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="faculty">Faculty:</label>
+					</td>
+					<td>
+						<input list="faculties" name="faculties">
+						  <datalist id="faculties">
+							<option value="Engineering">
+							<option value="Science">
+							<option value="Social Science">
+							<option value="Arts">
+							<option value="Education">
+						  </datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="department">Department:</label>
+					</td>
+					<td>
+						<input type="text" id="department" name="department" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="fname">First Name:</label>
+					</td>
+					<td>
+						<input type="text" id="fname" name="fname" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="mname">Middle Name:</label>
+					</td>
+					<td>
+						<input type="text" id="mname" name="mname" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="lname">Last Name:</label>
+					</td>
+					<td>
+						<input type="text" id="lname" name="lname" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="gender">Gender: </label>
+					</td>
+					<td>
+						<input list="gender" name="gender">
+						<datalist id="gender">
+							<option value="Male">
+							<option value="Female">
+						  </datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="session">Session:</label>
+					</td>
+					<td>
+						<input type="text" id="session" name="session" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Courses:
+					</td>
+					<td>
+						<input type="checkbox" id="GEG101" name="GEG101" value="English">
+						<label for="GEG101">Use Of English</label><br/>
+						<input type="checkbox" id="GEG102" name="GEG102" value="Physics">
+						<label for="GEG102">Physics</label><br/>
+						<input type="checkbox" id="GEG103" name="GEG103" value="Mathematics">
+						<label for="GEG103">Engineering Mathematics</label><br/>
+						<input type="checkbox" id="GEG104" name="GEG104" value="Statistics">
+						<label for="GEG104">Statistics</label><br/>
+						<input type="checkbox" id="GEG105" name="GEG105" value="Circuit Theory">
+						<label for="GEG105">Circuit Theory</label><br/>
+						<input type="checkbox" id="GEG106" name="GEG106" value="Fluid Mechanics">
+						<label for="GEG106">Fluid Mechanics</label><br/>
+						<input type="checkbox" id="GEG107" name="GEG107" value="Computational Theory">
+						<label for="GEG107">Computational Theory</label><br/>
+						<input type="checkbox" id="GEG108" name="GEG108" value="System Architecture">
+						<label for="GEG108">System Architecture</label>					
+					</td>
+				</tr>				
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>		
+			</table>
+		</form> 		
+	</body>
+
+</html>
+
+

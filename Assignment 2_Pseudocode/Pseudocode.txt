@@ -1,0 +1,59 @@
+C style pseudocode:
+------------------
+GetMinimumNumber() 
+{
+	read an array of numbers from user
+	declare a variable to store minimum number: minimumNumber;
+	assign the first element in the numbers array to variable: minimumNumber;
+	
+	loop through the array using foreach construct:
+		foreach( variable number inside array numbers)
+		{
+			if(minimumNumber is greater than number)
+			{
+				store number in minimumNumber;
+			}
+		}
+		
+		print or return minimumNumber;
+}
+	
+	
+	
+GetMaximumNumber() 
+{
+	read an array of numbers from user
+	declare a variable to store maximum number: maximumNumber;
+	assign the first element in the numbers array to variable: maximumNumber;
+	
+	loop through the array using foreach construct:
+		foreach( variable number inside array numbers)
+		{
+			if(maximumNumber is less than number)
+			{
+				store number in maximumNumber;
+			}
+		}
+		
+		print or return maximumNumber;
+}
+
+
+CalaculteAverage() 
+{
+	read an array of numbers from user
+	declare a variable to store the count of elements in numbers countOfElementsInArray
+	initialize the countOfElementsInArray to zero
+	declare a variable to store the sum of elements of numbers: sumOfElementsInArray;
+	initialize the variable to zero
+	
+	loop through the array using foreach construct:
+		foreach( variable number inside array numbers)
+		{
+				add number to sumOfElementsInArray
+				store the result back into sumOfElementsInArray
+				increment countOfElementsInArray by 1
+		}
+		
+		print or return sumOfElementsInArray/countOfElementsInArray
+}
