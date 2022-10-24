@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let fname = document.forms["myForm"]["fName"].value;
+  let mname = document.forms["myForm"]["mName"].value;
+  let lname = document.forms["myForm"]["lName"].value;
+  let txt = "";
+  if (fname == ""&&mname == ""&&lname == "" ) {
+    alert("All fields must be filled out");
+    return false;
+  }
+  else if(fname == ""){
+      alert("First name must be filled out");
+    return false;  
+  }
+   else if(mname == ""){
+      alert("Middle name must be filled out");
+    return false;  
+  }
+    else if(lname == ""){
+      alert("Last name must be filled out");
+    return false;  
+  }
+  else{
+	alert("First Name: " + fname + ", Middle Name: " + mname + ", and Last Name: " + lname +".");
+	return true;
+  }
+}
+</script>
+
+<style>
+	td{
+		padding: 10px;	
+	}
+	table{
+		width: 30%;
+		margin: auto;
+		border: 1px solid gray;
+		border-radius: 20px;
+	}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">BIO-DATA FORM</h2>
+
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+<table>
+	<tr>
+		<td>
+			First Name:
+		</td>
+		<td>
+			<input type="text" name="fName">
+		</td>
+	</tr>
+ 
+	<tr>
+		<td>
+			Middle Name:
+		</td>
+		<td>
+			<input type="text" name="mName">
+		</td>
+	</tr> 
+  
+	<tr>
+		<td>
+			Last Name:
+		</td>
+		<td>
+			<input type="text" name="lName">
+		</td>
+	</tr>  
+ 
+ 	<tr>
+		<td>
+			<input type="submit" value="Submit">
+		</td>
+	</tr>  
+  </table>
+</form>
+
+</body>
+</html>
